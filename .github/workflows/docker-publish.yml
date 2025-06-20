@@ -42,7 +42,7 @@ jobs:
           context: .   # Dockerfile所在目录
           push: true   # 构建后自动推送
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/your-image-name:${{ steps.tags.outputs.TAG }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/your-image-name:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/bilibuy:${{ steps.tags.outputs.TAG }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/bilibuy:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
